@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`_saveQuestionAnswer should update the users and questions state correctly 1`] = `
+Object {
+  "sarahedo": Object {
+    "answers": Object {
+      "8xf0y6ziyjabvozdd253nd": "optionOne",
+    },
+    "avatarURL": "https://img.freepik.com/premium-photo/engaging-cartoon-avatar-trustworthy-girl-her-late-s-tiktok-promotions_1283595-3611.jpg",
+    "id": "sarahedo",
+    "name": "Sarah Edo",
+    "password": "password123",
+    "questions": Array [
+      "8xf0y6ziyjabvozdd253nd",
+    ],
+  },
+  "tylermcginnis": Object {
+    "answers": Object {},
+    "avatarURL": "https://gravatar.com/avatar/27205e5c51cb03f862138b22bcb5dc20f94a342e744ff6df1b8dc8af3c865109",
+    "id": "tylermcginnis",
+    "name": "Tyler McGinnis",
+    "password": "abc321",
+    "questions": Array [],
+  },
+}
+`;
+
+exports[`_saveQuestionAnswer should update the users and questions state correctly 2`] = `
+Object {
+  "8xf0y6ziyjabvozdd253nd": Object {
+    "author": "sarahedo",
+    "id": "8xf0y6ziyjabvozdd253nd",
+    "optionOne": Object {
+      "text": "Build our new application with Javascript",
+      "votes": Array [
+        "sarahedo",
+      ],
+    },
+    "optionTwo": Object {
+      "text": "Build our new application with Typescript",
+      "votes": Array [],
+    },
+    "timestamp": 1467166872634,
+  },
+}
+`;
+
+exports[`check function _saveQuestionAnswer check snapshot is correct for _saveQuestionAnswer 1`] = `
+Object {
+  "sarahedo": Object {
+    "answers": Object {
+      "8xf0y6ziyjabvozdd253nd": "optionOne",
+    },
+    "avatarURL": "https://img.freepik.com/premium-photo/engaging-cartoon-avatar-trustworthy-girl-her-late-s-tiktok-promotions_1283595-3611.jpg",
+    "id": "sarahedo",
+    "name": "Sarah Edo",
+    "password": "password123",
+    "questions": Array [
+      "8xf0y6ziyjabvozdd253nd",
+    ],
+  },
+  "tylermcginnis": Object {
+    "answers": Object {},
+    "avatarURL": "https://gravatar.com/avatar/27205e5c51cb03f862138b22bcb5dc20f94a342e744ff6df1b8dc8af3c865109",
+    "id": "tylermcginnis",
+    "name": "Tyler McGinnis",
+    "password": "abc321",
+    "questions": Array [],
+  },
+}
+`;
+
+exports[`check function _saveQuestionAnswer check snapshot is correct for _saveQuestionAnswer 2`] = `
+Object {
+  "8xf0y6ziyjabvozdd253nd": Object {
+    "author": "sarahedo",
+    "id": "8xf0y6ziyjabvozdd253nd",
+    "optionOne": Object {
+      "text": "Build our new application with Javascript",
+      "votes": Array [
+        "sarahedo",
+      ],
+    },
+    "optionTwo": Object {
+      "text": "Build our new application with Typescript",
+      "votes": Array [],
+    },
+    "timestamp": 1467166872634,
+  },
+}
+`;
+
+exports[`should update the users and questions state correctly 1`] = `undefined`;
+
+exports[`should update the users and questions state correctly 2`] = `undefined`;
