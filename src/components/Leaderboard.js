@@ -4,11 +4,6 @@ import '../App.css';
 
 const Leaderboard = () => {
   const users = useSelector((state) => state.users);
-  const authedUser = useSelector((state) => state.users.authedUser);
-
-  if (authedUser == null) {
-    return (<div>Please login first</div>);
-  }
 
   if (!users || Object.keys(users).length === 0) {
     return <div>Loading...</div>;

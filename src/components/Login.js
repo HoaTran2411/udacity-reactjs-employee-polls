@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from "react-router";
 import { useDispatch } from 'react-redux';
 import { setAuthedUser } from '../actions/users';
 import { handleInitialData } from '../actions/share';
@@ -8,6 +8,7 @@ import { _getUsers } from '../utils/_DATA';
 const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const { state } = useLocation();
   const [users, setUsers] = useState([]);
   const [userId, setUserId] = useState('');
 
@@ -15,11 +16,12 @@ const Login = () => {
     _getUsers().then(setUsers);
   }, []);
 
-  const handleLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault();
     if (userId) {
       dispatch(setAuthedUser(userId));
       dispatch(handleInitialData());
-      navigate('/');
+      navigate(state?.path || "/");
     }
   };
 

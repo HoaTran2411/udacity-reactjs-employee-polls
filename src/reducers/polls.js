@@ -1,6 +1,10 @@
-import { RECEIVE_POLLS, ADD_POLL, ANSWER_POLL } from '../actions/polls';
+import { RECEIVE_POLLS, ADD_POLL, ANSWER_POLL, TOGGLE_VIEW } from '../actions/polls';
 
-const polls = (state = {}, action) => {
+const initialState = {
+  showUnanswered: true,
+};
+
+const polls = (state = initialState, action) => {
   switch (action.type) {
     case RECEIVE_POLLS:
       return {
@@ -22,6 +26,11 @@ const polls = (state = {}, action) => {
             votes: state[action.pollId][action.answer].votes.concat([action.authedUser]),
           },
         },
+      };
+    case TOGGLE_VIEW:
+      return {
+        ...state,
+        showUnanswered: !state.showUnanswered,
       };
     default:
       return state;

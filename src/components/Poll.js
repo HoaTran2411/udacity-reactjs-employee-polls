@@ -5,7 +5,7 @@ const Poll = ({ poll }) => {
   return (
     <div>
       <h3>
-        <Link to={`/poll/${poll.id}`}>{poll.optionOne.text} <span className='compareText'> vs </span> {poll.optionTwo.text}</Link>
+        <Link to={`/poll/${poll.id}`}>{poll.optionOne?.text} <span className='compareText'> vs </span> {poll.optionTwo?.text}</Link>
       </h3>
     </div>
   );

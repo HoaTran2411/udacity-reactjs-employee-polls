@@ -11,10 +11,6 @@ const PollDetail = () => {
   const authedUser = useSelector((state) => state.users.authedUser);
   const users = useSelector((state) => state.users);
 
-  if (authedUser == null) {
-    return (<div>Please login first</div>);
-  }
-
   if (!poll) {
     return <div>404 Poll Not Found</div>;
   }

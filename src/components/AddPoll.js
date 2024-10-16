@@ -10,10 +10,6 @@ const AddPoll = () => {
   const [optionOneText, setOptionOneText] = useState('');
   const [optionTwoText, setOptionTwoText] = useState('');
 
-  if (authedUser == null) {
-    return (<div>Please login first</div>);
-  }
-
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(handleAddPoll(optionOneText, optionTwoText, authedUser))
