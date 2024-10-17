@@ -95,9 +95,9 @@ describe('<PollDetail />', () => {
   test('renders poll', () => {
     render(
       <Provider store={store}>
-        <MemoryRouter initialEntries={[`/poll/${id}`]}>
+        <MemoryRouter initialEntries={[`/questions/${id}`]}>
           <Routes>
-            <Route path="/poll/:id" element={<PollDetail />} />
+            <Route path="/questions/:question_id" element={<PollDetail />} />
           </Routes>
         </MemoryRouter>
       </Provider>
@@ -108,9 +108,9 @@ describe('<PollDetail />', () => {
   test('check exist option 1', () => {
     render(
       <Provider store={store}>
-        <MemoryRouter initialEntries={[`/poll/${id}`]}>
+        <MemoryRouter initialEntries={[`/questions/${id}`]}>
           <Routes>
-            <Route path="/poll/:id" element={<PollDetail />} />
+            <Route path="/questions/:question_id" element={<PollDetail />} />
           </Routes>
         </MemoryRouter>
       </Provider>
@@ -121,9 +121,9 @@ describe('<PollDetail />', () => {
   test('check exist option 2', () => {
     render(
       <Provider store={store}>
-        <MemoryRouter initialEntries={[`/poll/${id}`]}>
+        <MemoryRouter initialEntries={[`/questions/${id}`]}>
           <Routes>
-            <Route path="/poll/:id" element={<PollDetail />} />
+            <Route path="/questions/:question_id" element={<PollDetail />} />
           </Routes>
         </MemoryRouter>
       </Provider>
