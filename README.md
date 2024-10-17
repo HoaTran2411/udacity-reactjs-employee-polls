@@ -26,6 +26,8 @@ Users can create new polls via a form located at the /add route. Upon creation, 
 A leaderboard is available at the /leaderboard route, showing users' names, avatars, and statistics (questions asked and answered). Users are ranked by the sum of these two metrics.
 
 ## How to run project
+Note: Please use node with version 20.17.0 if any error
+
 ### Step 1: `npm install`
 If have any error, using `npm audit fix --force`
 

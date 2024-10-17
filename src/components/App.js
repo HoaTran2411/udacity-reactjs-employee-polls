@@ -20,7 +20,7 @@ const App = () => {
           <Route exact path="/" element={<ProtectedRoute> <PollList /> </ProtectedRoute>} />
           <Route exact path="/add" element={<ProtectedRoute> <AddPoll /> </ProtectedRoute>} />
           <Route exact path="/leaderboard" element={<ProtectedRoute> <Leaderboard /> </ProtectedRoute>} />
-          <Route path="/poll/:id" element={<ProtectedRoute> <PollDetail /> </ProtectedRoute>} />
+          <Route path="/questions/:question_id" element={<ProtectedRoute> <PollDetail /> </ProtectedRoute>} />
           <Route exact path="/home" element={<ProtectedRoute> <Navbar /> </ProtectedRoute>} />
           <Route path="*" element={<NotFound />} />
         </Routes>

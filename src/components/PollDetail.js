@@ -6,7 +6,7 @@ import '../App.css';
 
 const PollDetail = () => {
   const dispatch = useDispatch();
-  const { id: pollId } = useParams();
+  const { question_id: pollId } = useParams();
   const poll = useSelector((state) => state.polls[pollId]);
   const authedUser = useSelector((state) => state.users.authedUser);
   const users = useSelector((state) => state.users);

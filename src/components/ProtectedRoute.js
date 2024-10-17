@@ -1,7 +1,8 @@
+import React from 'react';
 import { useLocation, Navigate } from "react-router";
 import { useSelector } from 'react-redux';
 
-function ProtectedRoute({ children }) {
+const ProtectedRoute = ({ children }) => {
     const authedUser = useSelector((state) => state.users.authedUser);
     const location = useLocation();
 
